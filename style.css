@@ -1,0 +1,201 @@
+/************************************************************
+  Default Styles / Mobile-first Approach 
+************************************************************/
+
+/****************************************
+  Overall Default Styles
+****************************************/
+:root {
+    /* Colors */
+    --pink: hsl(322, 100%, 66%);
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align:center;
+}
+
+/****************************************
+  Utility Classes
+****************************************/
+.illustrations {
+    width: 100%;
+}
+.logo {
+    width: 60%;
+}
+.pink-btn {
+    width: 80%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+/****************************************
+  Header Styles
+****************************************/
+header {
+    padding: 0 1.5rem;
+    background: var(--very-pale-cyan);
+}
+
+/*****Navbar Section*****/
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+#logo {
+    text-align: left;
+}
+#navbar button {
+    border: none;
+    background-color: white;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 1px 6px -2px grey;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/****************************************
+  Main Styles
+****************************************/
+
+/*****Landing Section*****/
+#landing-section {
+    background: var(--very-pale-cyan) url('/images/bg-hero-mobile.svg') no-repeat center;
+    padding: 4rem 1.5rem;
+}
+
+#landing-section h1,
+#landing-section p {
+    margin-bottom: 2rem;
+}
+
+#landing-section .pink-btn {
+    margin-bottom: 4rem;
+}
+
+/*****Features Section*****/
+#features {
+    padding: 4rem 1.5rem;
+}
+#features .card {
+    box-shadow: 0px 1px 6px -2px grey;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+}
+#features .card:last-child {
+    margin-bottom: 0;
+}
+
+#features .illustrations {
+    margin-bottom: 3rem;
+}
+
+#features h2 {
+    margin-bottom: 2rem;
+}
+
+#features p {
+    color: var(--grayish-blue);
+}
+
+/*****CTA Section*****/
+#cta {
+    padding: 4rem 1.5rem;
+    position: absolute;
+    z-index: 1;
+}
+#cta div {
+    box-shadow: 0px 1px 6px -2px grey;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    background-color: white;
+}
+
+#cta h2 {
+    margin-bottom: 2rem;
+}
+
+/*****Contact Section*****/
+#contact {
+    background-color: var(--very-dark-cyan);
+    margin-top: 13rem;
+    padding: 10rem 1.5rem 3rem 1.5rem;
+    color: white;
+    text-align: left;
+}
+#contact figure,
+#contact address {
+    margin-bottom: 2rem;
+}
+#contact address div {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.icon {
+    margin-right: 2rem;
+    width: 8%;
+}
+#location .icon {
+    width: 25%;
+    height: 10%;
+}
+.contact-links ul{
+    list-style: none;
+}
+.contact-links li {
+    margin-bottom: 1.5rem;
+}
+.contact-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: var(--pink);
+}
+
+/****************************************
+  Footer Styles
+****************************************/
+footer {
+    background-color: var(--very-dark-cyan);
+    color: white;
+}
+#footer-info {
+    margin-bottom: 1rem;
+}
+#socials {
+    margin-bottom: 2rem;
+}
+#socials a {
+    color: white;
+    margin-right: 1.5rem;
+}
+.attribution { 
+    font-size: 1rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

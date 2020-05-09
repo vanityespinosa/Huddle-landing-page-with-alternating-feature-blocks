@@ -6,58 +6,55 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e645f17634.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
     <nav id="navbar">
       <div id="logo">
         <a href="#">
-          <img src="images/logo.svg" alt="Huddle Logo">
+          <img class="logo" src="images/logo.svg" alt="Huddle Logo">
         </a>
       </div>
       <div>
         <button>Try It Free</button>
       </div>
     </nav>
-    <section id="landing-section">
-      <h1>Build The Community Your Fans Will Love</h1>
-      <h2> 
-        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
-      </h2>
-      <button>Get Started For Free</button>
-      <figure>
-        <img src="/images/illustration-mockups.svg" alt="Mockup Image">
-      </figure>
-    </section>
   </header>
   <main>
+    <section id="landing-section">
+      <h1>Build The Community Your Fans Will Love</h1>
+      <p> 
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. 
+      </p>
+      <button class="pink-btn">Get Started For Free</button>
+      <figure>
+        <img class="illustrations" src="/images/illustration-mockups.svg" alt="Mockup Image">
+      </figure>
+    </section>
     <div id="features">
-      <section id="grow">
+      <section class="card" id="grow">
         <figure>
-          <img src="/images/illustration-grow-together.svg" alt="Two People Standing Together">
+          <img class="illustrations" src="/images/illustration-grow-together.svg" alt="Two People Standing Together">
         </figure>
         <h2>Grow Together</h2>
         <p>
           Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. 
         </p>
       </section>
-      <section id="convos">
+      <section class="card" id="convos">
         <figure>
-          <img src="/images/illustration-flowing-conversation.svg" alt="People having a conversation">
+          <img class="illustrations" src="/images/illustration-flowing-conversation.svg" alt="People having a conversation">
         </figure>
         <h2>Flowing Conversations</h2>
         <p>
           You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </section>
-      <section id="users">
+      <section class="card" id="users">
         <figure>
-          <img src="/images/illustration-your-users.svg" alt="Users">
+          <img class="illustrations" src="/images/illustration-your-users.svg" alt="Users">
         </figure>
         <h2>Your Users</h2>
         <p>
@@ -65,31 +62,33 @@
         </p>
       </section>
     </div>
-    <div>
-      <h2>Ready To Build Your Community</h2>
-      <button>Get Started For Free</button>
-    </div>
+    <section id="cta">
+      <div>
+        <h2>Ready To Build Your Community?</h2>
+        <button class="pink-btn">Get Started For Free</button>
+      </div>
+    </section>
     <section id="contact">
       <figure>
-        <img src="/images/logo.svg" alt="Huddle Logo">
+        <img class="logo" src="/images/logo-white.svg" alt="Huddle Logo">
       </figure>
       <address>
         <div id="location">
-          <img src="/images/icon-location.svg" alt="Location Icon">
+          <img class="icon" src="/images/icon-location.svg" alt="Location Icon">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
         <div id="number">
-          <img src="/images/icon-phone.svg" alt="Phone Icon">
+          <img class="icon" src="/images/icon-phone.svg" alt="Phone Icon">
           <p>+1-543-123-4567</p>
         </div>
         <div id="email">
-          <img src="/images/icon-email.svg" alt="Gmail Icon">
+          <img class="icon" src="/images/icon-email.svg" alt="Gmail Icon">
           <p>example@huddle.com</p>
         </div>
       </address>
-      <nav>
+      <nav class="contact-links">
         <ul>
           <li><a href="#">About Us</a></li>
           <li><a href="#">What We Do</a></li>
@@ -99,21 +98,14 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      About Us
-      What We Do
-      FAQ
-
-      Career
-      Blog
-      Contact Us
     </section>
   </main>
   <footer>
-    <section>
+    <section id="footer-info">
       <div id="socials">
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-twitter-square"></i></a>
-        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
       </div>
       <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
     </section>
