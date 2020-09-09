@@ -199,3 +199,27 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/************************************************************
+  Lg Mobile Designs 
+************************************************************/
+@media only screen and (min-width:450px) {
+    /****************************************
+        Main Styles
+    ****************************************/
+    /*****Contact Section*****/
+    #contact .logo {
+        width: 15rem;
+    }
+    #contact .icon {
+        width: 1.50rem;
+        height: 1.15rem;
+    }
+    #contact address {
+        font-style: normal;
+        margin-bottom: 4.5rem;
+    }
+    #location p {
+        padding-left: 11px;
+    }
+}
