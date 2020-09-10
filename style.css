@@ -37,6 +37,7 @@ body {
 }
 .pink-btn {
     width: 80%;
+    max-width: 20rem;
     height: 45px;
     border-radius: 20px;
     border: none;
@@ -223,3 +224,20 @@ footer {
         padding-left: 11px;
     }
 }
+
+/************************************************************
+  Tablet Design
+************************************************************/
+@media only screen and (min-width:560px) {
+    /****************************************
+        Main Styles
+    ****************************************/
+
+    /*****CTA Section*****/
+    #cta {
+        width: 100%;
+        padding: 4rem 25%;
+    }
+}
+
+
