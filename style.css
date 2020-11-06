@@ -240,4 +240,43 @@ footer {
     }
 }
 
+/************************************************************
+  Small Desktop Design
+************************************************************/
+@media only screen and (min-width:1024px) {
+    /****************************************
+        Utility Classes
+    ****************************************/
+    .logo {
+        width: 80%;
+    }
+    /****************************************
+        Header Styles
+    ****************************************/
+    header {
+        padding: 1rem 4rem;
+    }
+    /*****Navbar Section*****/
+    #navbar button {
+        width: 12rem;
+        height: 3rem;
+    }
 
+    /****************************************
+        Main Styles
+    ****************************************/
+    /*****Landing Section*****/
+    #landing-section {
+        padding: 4rem;
+        display: flex;
+    }
+    #landing-section #headline {
+        padding-right: 4rem;
+    }
+
+    /*****CTA Section*****/
+    #cta {
+        width: 100%;
+        padding: 4rem 25%;
+    }
+}
