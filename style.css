@@ -250,6 +250,9 @@ footer {
     .logo {
         width: 80%;
     }
+    .pink-btn {
+        max-width: 16rem;
+    }
     /****************************************
         Header Styles
     ****************************************/
@@ -272,11 +275,41 @@ footer {
     }
     #landing-section #headline {
         padding-right: 4rem;
+        text-align: left;
+        width: 50rem;
+    }
+    /*****Features Section*****/
+    #features {
+        padding: 6rem 4rem;
+    }
+    #features .card {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+        padding: 3rem 5rem;
+        align-content: center;
+    }
+    #features .card div {
+        align-self: center;
+        width: 55rem;
+        padding-right: 3rem;
+    }
+    #features #convos{
+        flex-direction: row;
+    }
+    #features #convos div {
+        padding-left: 3rem;
+        padding-right: 0;
     }
 
     /*****CTA Section*****/
     #cta {
         width: 100%;
         padding: 4rem 25%;
+    }
+
+    /*****Contact Section*****/
+    #contact #info{
+        display: flex;
     }
 }
