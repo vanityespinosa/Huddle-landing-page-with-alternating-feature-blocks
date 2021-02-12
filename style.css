@@ -175,6 +175,10 @@ header {
 .contact-links a:hover {
     color: var(--pink);
 }
+/* Hide social icons until screen is bigger.*/
+#contact #info #hidden-socials {
+    display: none;
+}
 
 /****************************************
   Footer Styles
@@ -309,7 +313,39 @@ footer {
     }
 
     /*****Contact Section*****/
+    #contact {
+        padding: 6rem 4rem;
+    }
     #contact #info{
         display: flex;
+    }
+    #contact #info address {
+        width: 40%; 
+        padding-right: 2rem;
+    }
+    #contact #info .contact-links {
+        width: 30%;
+    }
+    #contact #info .contact-links ul{
+        display: grid;
+        grid-template-areas:
+            "left right"
+            "left right"
+            "left right";
+    }
+    #contact #info #hidden-socials{
+        width: 30%;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    #contact #info #hidden-socials a {
+        color: white;
+        margin-right: 1.5rem;
+    }
+    /****************************************
+        Footer Styles
+    ****************************************/
+    footer #footer-info #socials {
+        display: none;
     }
 }
